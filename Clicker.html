@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://telegram.org/js/telegram-web-app.js?57"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Clicker</title>
+    <style type="text/css">
+body {
+  background-image: url("textures/stone.png");
+  background-repeat: repeat;
+}
+
+header {
+  background-color: var(--tg-color-scheme);
+  height: 60px;
+  font-family: "Minecraft Rus";
+  font-weight: bold;
+  border: 0px solid #030303;
+  border-radius: 10px / 10px;
+  text-align: center;
+}
+
+#Block {
+  width: 80%;
+  margin: 20vw 10vw 10vw;
+}
+
+.underheader {
+  /*background-color: #416078;*/
+  background-color: var(--tg-color-scheme);
+  height: 30px;
+  margin-top:-15px;
+	margin-left:20%;
+  margin-right:20%;
+  font-family: "Minecraft Rus";
+  border: 0px solid #030303;
+  border-radius: 10px / 10px;
+  text-align: center;
+}
+
+</style></head>
+  <body>
+    <header>
+      <h1 style="height: 45px;line-height: 200%;">EB2 Clicker</h1>
+      <div class="underheader">
+        <h3 id="moneytext" style="height: 45px;line-height: 200%;">0
+          Камней</h3>
+      </div>
+    </header>
+    <div> <img src="textures/cobblestone.png" alt="its block to click &lt;3" title="block"
+        onclick="tap()" id="Block"> </div>
+    
+    <script type="text/javascript">
+    	var money = 0;
+			var income = 1;
+      const moneytext = document.getElementById("moneytext");
+    	const block = document.getElementById("Block");	
+    
+			function tap() {
+        block.style.width = "75%";
+  			money = money + income;
+        new Audio('sounds/stonekick.ogg').play()
+        moneytext.textContent = `${money} Камней`;
+        console.log(money);
+        setTimeout(() => { block.style.width = "80%"; }, 70);
+			}
+    </script>
+  </body>
+</html>
