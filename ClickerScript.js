@@ -8,7 +8,7 @@ var blocks = ["cobblestone","coal","copper","iron","gold"]
 function tap() {
     block.style.width = "75%";
   			money = money + income;
-    new Audio('sounds/stonekick.ogg').play()
+    new Audio('sounds/stonekick.ogg').play();
     moneytext.textContent = `${money} Камней`;
     console.log(`Money: ${money});
     setTimeout(() => { block.style.width = "80%"; }, 70);
