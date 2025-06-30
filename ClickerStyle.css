@@ -1,6 +1,7 @@
 font-face {
 	font-family: 'Minecraft Rus'; 
-	src: url(minecraft.ttf); 
+	src: local('Minecraft Rus'),
+		url(/minecraft.ttf); 
 }
 
 body {
