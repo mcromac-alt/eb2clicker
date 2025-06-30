@@ -1,5 +1,6 @@
 var money = 0;
 var income = 1;
+var nextlvlmoney = 50;
 const moneytext = document.getElementById("moneytext");
 const block = document.getElementById("Block");	
 var blocks = ["cobblestone","coal","copper","iron","gold"]
@@ -15,9 +16,10 @@ function tap() {
 
 function upgrade() {
     if (money>=nextlvlmoney) {
-        ++level
-        income = income * level
-        console.log(`Achieved ${blocks[level]} level.`)
-        block.src=`${blocks[level]}_ore.png
+        ++level;
+        income = income * level;
+        nextlvlmoney = nextlvlmoney*level
+        console.log(`Achieved ${blocks[level]} level.`);
+        block.src=`${blocks[level]}_ore.png;
     }
 }
