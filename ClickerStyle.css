@@ -15,6 +15,7 @@ header {
   background-color: var(--tg-theme-bg-color);
   height: 60px;
   font-family: "Minecraft Rus";
+  color:var(--tg-theme-text-color);
   border: 0px solid #030303;
   border-radius: 10px / 10px;
   text-align: center;
@@ -26,13 +27,14 @@ header {
 }
 
 .underheader {
-  background: var(--tg-theme-secondary-bg-color);
+  background: var(--tg-theme-bg-color);
   /*background-color: #416078;*/
   height: 30px;
   margin-top:-15px;
 	margin-left:20%;
   margin-right:20%;
   font-family: "Minecraft Rus";
+  color:var(--tg-theme-text-color);
   border: 0px solid #030303;
   border-radius: 10px / 10px;
   text-align: center;
