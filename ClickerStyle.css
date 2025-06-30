@@ -1,3 +1,8 @@
+font-face {
+	font-family: 'Minecraft Rus'; 
+	src: url(Minecraft.ttf); 
+}
+
 body {
   background-image: url("textures/stone.png");
   background-repeat: repeat;
