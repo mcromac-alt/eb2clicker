@@ -12,7 +12,7 @@ function tap() {
     moneytext.textContent = `${money} Камней`;
     console.log(`Money: ${money});
     setTimeout(() => { block.style.width = "80%"; }, 70);
-			}
+    }
 
 function upgrade() {
     if (money>=nextlvlmoney) {
