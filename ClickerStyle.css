@@ -1,1 +1,32 @@
-no
+body {
+  background-image: url("textures/stone.png");
+  background-repeat: repeat;
+}
+
+header {
+  background-color: #416078;
+  height: 60px;
+  font-family: "Minecraft Rus";
+  font-weight: bold;
+  border: 0px solid #030303;
+  border-radius: 10px / 10px;
+  text-align: center;
+}
+
+#Block {
+  width: 80%;
+  margin: 20vw 10vw 10vw;
+}
+
+.underheader {
+  /*background-color: --tg-color-scheme;*/
+  background-color: #416078;
+  height: 30px;
+  margin-top:-15px;
+	margin-left:20%;
+  margin-right:20%;
+  font-family: "Minecraft Rus";
+  border: 0px solid #030303;
+  border-radius: 10px / 10px;
+  text-align: center;
+}
