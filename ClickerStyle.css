@@ -1,8 +1,10 @@
-font-face {
+/*font-face {
 	font-family: 'Minecraft Rus'; 
 	src: local('Minecraft Rus'),
 		url(minecraft.woff); 
-}
+}*/
+
+@import url('minecraft.woff?family=Minecraft Rus');
 
 body {
   background-image: url("textures/stone.png");
