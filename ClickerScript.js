@@ -18,6 +18,6 @@ function upgrade() {
         ++level
         income = income * level
         console.log(`Achieved ${blocks[level]} level.`)
-        block.src=`${blocks[level]}.png
+        block.src=`${blocks[level]}_ore.png
     }
 }
