@@ -39,3 +39,10 @@ header {
   border-radius: 10px / 10px;
   text-align: center;
 }
+
+#upgrade_button {
+  width: 80%;
+  margin-bottom: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
