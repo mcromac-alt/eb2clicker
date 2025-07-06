@@ -20,7 +20,8 @@ function upgrade() {
         ++level;
         income = income * level;
         nextlvlmoney = nextlvlmoney*level
-        console.log(`Achieved ${blocks[level-1]} level.`);
+        console.log(`Achieved ${blocks[level-1]} level`);
         block.src=`textures/${blocks[level-1]}.png`;
+        
     }
 }
